@@ -6,7 +6,7 @@
 \usepackage{float}
 
 \title{\Huge{Perception and AI Skin detection}\\ ESIEE Paris 2023 - 2024}
-\author{\huge{Gloria Desideri and Julie Nonsocomesechiama }}
+\author{\huge{Gloria Desideri and Julie  Aguilar}}
 \date{}
 
 \begin{document}
@@ -123,9 +123,48 @@ We proceded our analysis with the HSV space
 \end{figure}
 Here we can see how the image with great brightness has the higher S and V values. 
 Also the histograms give much insight for the hue value, which is from 0 to 100 for normal and
-poor lighting and more restricted for up lighting.
+poor lighting and more restricted for up lighting. \\
+In addition we analyzed the HSV graphs with some images we took with our cameras and they produced the following results.
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/HSVNormal_J.png}
+ \caption{Image taken without flash}
+\centering
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/HSVUp_J.png}
+  \caption{Image taken with flash}
+\centering
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/HSVDown_J.png}
+ \caption{Poor lighting}
+\centering
+\end{figure}
+The analysis of HSV graphs for skin color detection provides crucial insights into the method's performance under different lighting conditions. In optimal conditions with a flash, a distinct peak is observed from 0 to 12.5, suggesting effective detection of skin tones under bright light, followed by a peak from 12.5 to 25 with a slight decrease in brightness. The subsequent stability with peaks at 0.005 may indicate areas with less light or variations in skin color.
+
+However, without a flash, the peak from 9 to 12.5 suggests a slight variation in skin color, while the peak from 25 to 37.5 represents another range of skin colors with decreased brightness. The subsequent stability with a peak at 0.0155 may correspond to stable but less bright areas. In very low-light conditions, although the method still detects a range of skin colors from 12.5 to 25, peaks at 0.0075 towards 37.5, 12.5, and 150 may indicate detection errors or variations due to low light, with peaks abruptly stopping at the value of 162.5.
 \chapter{Segmentation and results}
-Next we proceded with the segmentation task. In particular we used the precision function as
+\section{First tests}
+As a start we used the method proposed in class on the images taken with our camera. Since this was
+a mere test we only conducted this experiment on the HSV space obtaining the following results.
+\begin{figure}[H]
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_downHSV_J.png}
+    \caption{Hand down}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_normalHSV_J.png}
+    \caption{Hand normal}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_upHSV_J.png}
+    \caption{Hand up}
+  \endminipage\hfill
+\end{figure}
+In terms of overall performance, the method appears robust in optimal lighting conditions, with peaks corresponding to different skin tones. However, weaknesses emerge in low-light conditions, where peaks unrelated to skin color may occur. Sensitivity to lighting variations emphasizes the need for adaptation and manual validations. The method might show vulnerabilities in suboptimal conditions, requiring threshold adjustments and thorough validation to ensure reliable performance. Adaptability to diverse skin tones and manual ground truth creation will be crucial for accurate method evaluation.
+\section{More formal experiments}
+Next we proceded with some formal experiments.
+In particular we used the precision function as
 our performance measure 
 \[
   \frac{\text{TP}}{\text{TP}+\text{FP}}

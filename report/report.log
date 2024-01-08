@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.30)  8 JAN 2024 19:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.30)  8 JAN 2024 21:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1250,7 +1250,7 @@ l.20
 
 ]
 Chapter 1.
-<Images/hsv.png, id=75, 697.60625pt x 616.3025pt>
+<Images/hsv.png, id=81, 697.60625pt x 616.3025pt>
 File: Images/hsv.png Graphic file (type png)
 <use Images/hsv.png>
 Package pdftex.def Info: Images/hsv.png  used on input line 40.
@@ -1259,7 +1259,7 @@ Package pdftex.def Info: Images/hsv.png  used on input line 40.
 
  <./Images/hsv.png>]
 Chapter 2.
-<Images/hand1.png, id=82, 579.16376pt x 434.62375pt>
+<Images/hand1.png, id=88, 579.16376pt x 434.62375pt>
 File: Images/hand1.png Graphic file (type png)
 <use Images/hand1.png>
 Package pdftex.def Info: Images/hand1.png  used on input line 48.
@@ -1268,32 +1268,32 @@ Package pdftex.def Info: Images/hand1.png  used on input line 48.
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 50.
 
-<Images/hand2.png, id=84, 579.16376pt x 434.62375pt>
+<Images/hand2.png, id=90, 579.16376pt x 434.62375pt>
 File: Images/hand2.png Graphic file (type png)
 <use Images/hand2.png>
 Package pdftex.def Info: Images/hand2.png  used on input line 52.
 (pdftex.def)             Requested size: 122.85878pt x 92.1955pt.
-<Images/hand3.png, id=85, 579.16376pt x 434.62375pt>
+<Images/hand3.png, id=91, 579.16376pt x 434.62375pt>
 File: Images/hand3.png Graphic file (type png)
 <use Images/hand3.png>
 Package pdftex.def Info: Images/hand3.png  used on input line 56.
 (pdftex.def)             Requested size: 122.85878pt x 92.1955pt.
-<Images/hand4.png, id=86, 579.16376pt x 434.62375pt>
+<Images/hand4.png, id=92, 579.16376pt x 434.62375pt>
 File: Images/hand4.png Graphic file (type png)
 <use Images/hand4.png>
 Package pdftex.def Info: Images/hand4.png  used on input line 60.
 (pdftex.def)             Requested size: 122.85878pt x 92.1955pt.
-<Images/hand_down.png, id=87, 396.0396pt x 302.0886pt>
+<Images/hand_down.png, id=93, 396.0396pt x 302.0886pt>
 File: Images/hand_down.png Graphic file (type png)
 <use Images/hand_down.png>
 Package pdftex.def Info: Images/hand_down.png  used on input line 70.
 (pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_normal.png, id=88, 396.0396pt x 302.0886pt>
+<Images/hand_normal.png, id=94, 396.0396pt x 302.0886pt>
 File: Images/hand_normal.png Graphic file (type png)
 <use Images/hand_normal.png>
 Package pdftex.def Info: Images/hand_normal.png  used on input line 74.
 (pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_up.png, id=89, 396.0396pt x 302.0886pt>
+<Images/hand_up.png, id=95, 396.0396pt x 302.0886pt>
 File: Images/hand_up.png Graphic file (type png)
 <use Images/hand_up.png>
 Package pdftex.def Info: Images/hand_up.png  used on input line 78.
@@ -1337,17 +1337,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7}) h
 l.82 \chapter
              {Analysis} <./Images/hand1.png> <./Images/hand2.png> <./Images/hand3.png> <./Images/hand4.png> <./Images/hand_down.png> <./Images/hand_normal.png> <./Images/hand_up.png>]
 Chapter 3.
-<Images/YCRCBNormal.png, id=108, 712.6625pt x 331.2375pt>
+<Images/YCRCBNormal.png, id=114, 712.6625pt x 331.2375pt>
 File: Images/YCRCBNormal.png Graphic file (type png)
 <use Images/YCRCBNormal.png>
 Package pdftex.def Info: Images/YCRCBNormal.png  used on input line 90.
 (pdftex.def)             Requested size: 285.05995pt x 132.49265pt.
-<Images/YCRCBUp.png, id=109, 708.6475pt x 326.21875pt>
+<Images/YCRCBUp.png, id=115, 708.6475pt x 326.21875pt>
 File: Images/YCRCBUp.png Graphic file (type png)
 <use Images/YCRCBUp.png>
 Package pdftex.def Info: Images/YCRCBUp.png  used on input line 95.
 (pdftex.def)             Requested size: 283.45398pt x 130.48518pt.
-<Images/YCRCBDown.png, id=110, 707.64375pt x 320.19624pt>
+<Images/YCRCBDown.png, id=116, 707.64375pt x 320.19624pt>
 File: Images/YCRCBDown.png Graphic file (type png)
 <use Images/YCRCBDown.png>
 Package pdftex.def Info: Images/YCRCBDown.png  used on input line 100.
@@ -1365,17 +1365,17 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) h
                                                   \__shipout_drop_firstpage_...
 l.104 H
        ere is evident how the image with poor lighting conditions is less br... <./Images/YCRCBNormal.png> <./Images/YCRCBUp.png>]
-<Images/HSVNormal.png, id=119, 709.65125pt x 315.1775pt>
+<Images/HSVNormal.png, id=125, 709.65125pt x 315.1775pt>
 File: Images/HSVNormal.png Graphic file (type png)
 <use Images/HSVNormal.png>
 Package pdftex.def Info: Images/HSVNormal.png  used on input line 110.
 (pdftex.def)             Requested size: 283.85547pt x 126.06876pt.
-<Images/HSVUp.png, id=120, 707.64375pt x 319.1925pt>
+<Images/HSVUp.png, id=126, 707.64375pt x 319.1925pt>
 File: Images/HSVUp.png Graphic file (type png)
 <use Images/HSVUp.png>
 Package pdftex.def Info: Images/HSVUp.png  used on input line 115.
 (pdftex.def)             Requested size: 283.05249pt x 127.67473pt.
-<Images/HSVDown.png, id=121, 708.6475pt x 320.19624pt>
+<Images/HSVDown.png, id=127, 708.6475pt x 320.19624pt>
 File: Images/HSVDown.png Graphic file (type png)
 <use Images/HSVDown.png>
 Package pdftex.def Info: Images/HSVDown.png  used on input line 120.
@@ -1395,81 +1395,143 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.124 H
-       ere we can see how the image with great brightness has the higher S a... <./Images/YCRCBDown.png> <./Images/HSVNormal.png> <./Images/HSVUp.png>] [6
+       ere we can see how the image with great brightness has the higher S a... <./Images/YCRCBDown.png> <./Images/HSVNormal.png> <./Images/HSVUp.png>]
+<Images/HSVNormal_J.png, id=138, 571.13374pt x 608.2725pt>
+File: Images/HSVNormal_J.png Graphic file (type png)
+<use Images/HSVNormal_J.png>
+Package pdftex.def Info: Images/HSVNormal_J.png  used on input line 129.
+(pdftex.def)             Requested size: 228.44945pt x 243.30469pt.
+<Images/HSVUp_J.png, id=139, 586.19pt x 606.265pt>
+File: Images/HSVUp_J.png Graphic file (type png)
+<use Images/HSVUp_J.png>
+Package pdftex.def Info: Images/HSVUp_J.png  used on input line 134.
+(pdftex.def)             Requested size: 234.47185pt x 242.5017pt.
+<Images/HSVDown_J.png, id=140, 580.1675pt x 606.265pt>
+File: Images/HSVDown_J.png Graphic file (type png)
+<use Images/HSVDown_J.png>
+Package pdftex.def Info: Images/HSVDown_J.png  used on input line 139.
+(pdftex.def)             Requested size: 232.06288pt x 242.5017pt.
+ [6
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.127 \chapter
-              {Segmentation and results} <./Images/HSVDown.png>]
+l.142 \end{figure}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.142 \end{figure}
+                   <./Images/HSVDown.png> <./Images/HSVNormal_J.png>] [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.146 \chapter
+              {Segmentation and results}
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.146 \chapter
+              {Segmentation and results} <./Images/HSVUp_J.png> <./Images/HSVDown_J.png>] [8]
 Chapter 4.
-<Images/hand_downYCRCB.png, id=139, 396.0396pt x 302.0886pt>
+<Images/hand_downHSV_J.png, id=162, 319.1925pt x 237.88875pt>
+File: Images/hand_downHSV_J.png Graphic file (type png)
+<use Images/hand_downHSV_J.png>
+Package pdftex.def Info: Images/hand_downHSV_J.png  used on input line 152.
+(pdftex.def)             Requested size: 157.26283pt x 117.20535pt.
+<Images/hand_normalHSV_J.png, id=163, 325.215pt x 243.91125pt>
+File: Images/hand_normalHSV_J.png Graphic file (type png)
+<use Images/hand_normalHSV_J.png>
+Package pdftex.def Info: Images/hand_normalHSV_J.png  used on input line 156.
+(pdftex.def)             Requested size: 157.26283pt x 117.95068pt.
+<Images/hand_upHSV_J.png, id=164, 322.20375pt x 245.91875pt>
+File: Images/hand_upHSV_J.png Graphic file (type png)
+<use Images/hand_upHSV_J.png>
+Package pdftex.def Info: Images/hand_upHSV_J.png  used on input line 160.
+(pdftex.def)             Requested size: 157.26283pt x 120.03218pt.
+<Images/hand_downYCRCB.png, id=165, 396.0396pt x 302.0886pt>
 File: Images/hand_downYCRCB.png Graphic file (type png)
 <use Images/hand_downYCRCB.png>
-Package pdftex.def Info: Images/hand_downYCRCB.png  used on input line 148.
+Package pdftex.def Info: Images/hand_downYCRCB.png  used on input line 187.
 (pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_normalYCRCB.png, id=140, 396.0396pt x 302.0886pt>
+<Images/hand_normalYCRCB.png, id=166, 396.0396pt x 302.0886pt>
 File: Images/hand_normalYCRCB.png Graphic file (type png)
 <use Images/hand_normalYCRCB.png>
-Package pdftex.def Info: Images/hand_normalYCRCB.png  used on input line 152.
+Package pdftex.def Info: Images/hand_normalYCRCB.png  used on input line 191.
 (pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_upYCRCB.png, id=141, 396.0396pt x 302.0886pt>
+<Images/hand_upYCRCB.png, id=167, 396.0396pt x 302.0886pt>
 File: Images/hand_upYCRCB.png Graphic file (type png)
 <use Images/hand_upYCRCB.png>
-Package pdftex.def Info: Images/hand_upYCRCB.png  used on input line 156.
+Package pdftex.def Info: Images/hand_upYCRCB.png  used on input line 195.
 (pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_downHSV.png, id=142, 396.0396pt x 302.0886pt>
-File: Images/hand_downHSV.png Graphic file (type png)
-<use Images/hand_downHSV.png>
-Package pdftex.def Info: Images/hand_downHSV.png  used on input line 171.
-(pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_normalHSV.png, id=143, 396.0396pt x 302.0886pt>
-File: Images/hand_normalHSV.png Graphic file (type png)
-<use Images/hand_normalHSV.png>
-Package pdftex.def Info: Images/hand_normalHSV.png  used on input line 175.
-(pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
-<Images/hand_upHSV.png, id=144, 396.0396pt x 302.0886pt>
-File: Images/hand_upHSV.png Graphic file (type png)
-<use Images/hand_upHSV.png>
-Package pdftex.def Info: Images/hand_upHSV.png  used on input line 179.
-(pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
+[9
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--182
 
- []
-
-[7
-
-{/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc}
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 \end{document}
-                    
+l.198 \end{figure}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 \end{document}
-                    
+l.198 \end{figure}
+                  
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 \end{document}
-                     <./Images/hand_downYCRCB.png> <./Images/hand_normalYCRCB.png> <./Images/hand_upYCRCB.png>] [8
+l.198 \end{figure}
+                  {/usr/local/texlive/2023basic/texmf-dist/fonts/enc/dvips/newpx/px-lms.enc} <./Images/hand_downHSV_J.png> <./Images/hand_normalHSV_J.png> <./Images/hand_upHSV_J.png>]
+<Images/hand_downHSV.png, id=179, 396.0396pt x 302.0886pt>
+File: Images/hand_downHSV.png Graphic file (type png)
+<use Images/hand_downHSV.png>
+Package pdftex.def Info: Images/hand_downHSV.png  used on input line 210.
+(pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
+<Images/hand_normalHSV.png, id=180, 396.0396pt x 302.0886pt>
+File: Images/hand_normalHSV.png Graphic file (type png)
+<use Images/hand_normalHSV.png>
+Package pdftex.def Info: Images/hand_normalHSV.png  used on input line 214.
+(pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
+<Images/hand_upHSV.png, id=181, 396.0396pt x 302.0886pt>
+File: Images/hand_upHSV.png Graphic file (type png)
+<use Images/hand_upHSV.png>
+Package pdftex.def Info: Images/hand_upHSV.png  used on input line 218.
+(pdftex.def)             Requested size: 157.26283pt x 119.95749pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--221
+
+ []
+
+[10
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 \end{document}
+l.222 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 \end{document}
+l.222 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.183 \end{document}
-                     <./Images/hand_downHSV.png> <./Images/hand_normalHSV.png> <./Images/hand_upHSV.png>] (./report.aux)
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.222 \end{document}
+                     <./Images/hand_downYCRCB.png> <./Images/hand_normalYCRCB.png> <./Images/hand_upYCRCB.png> <./Images/hand_downHSV.png> <./Images/hand_normalHSV.png> <./Images/hand_upHSV.png>] (./report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
@@ -1479,18 +1541,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 37534 strings out of 477476
- 760135 string characters out of 5824243
- 1859388 words of memory out of 5000000
- 57047 multiletter control sequences out of 15000+600000
+ 37588 strings out of 477476
+ 761329 string characters out of 5824243
+ 1860388 words of memory out of 5000000
+ 57085 multiletter control sequences out of 15000+600000
  536965 words of font info for 100 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 99i,9n,102p,455b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,9n,102p,633b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/Gloria/Library/texlive/2023basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1000.600pk></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023basic/texmf-dist/fonts/type1/public/newpx/pxsys.pfb>
-Output written on report.pdf (9 pages, 1930267 bytes).
+Output written on report.pdf (11 pages, 3027537 bytes).
 PDF statistics:
- 225 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 46 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 
