@@ -1,0 +1,183 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+\usepackage{float}
+
+\title{\Huge{Perception and AI Skin detection}\\ ESIEE Paris 2023 - 2024}
+\author{\huge{Gloria Desideri and Julie Nonsocomesechiama }}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\chapter{Introduction}
+The main objective of this practical session was to wxperiment with color manipulation
+to understand the impact of color coding and light conditions. We had to perform
+skin segmentation from images of hands in three different light conditions: normail lighting,
+down lighting and upligthing. We were aslso asked to use two different color spaces. For 
+the purpose of this lab we choosed the HSV and the YCrCb spaces.\\
+The YCbCr color space, also known as YUV, is a color encoding system often used in video and image compression. It separates the chrominance (color information) from the luma (brightness information) to allow for greater compression efficiency.
+\begin{itemize}
+  \item The Y represents the luma or brightness of the image
+  \item Cb represents the difference between the blue and green components of the original color
+  \item Cr component represents the difference between the red and green components of the original color
+\end{itemize}
+The HSV (Hue, Saturation, Value) color space is a model that represents colors in a way that's closer to how humans perceive them. Unlike the RGB (Red, Green, Blue) color model, which uses primary colors, HSV separates the color information into three components:
+\begin{itemize}
+  \item Hue: This represents the type of color. It is usually represented in degrees from 0 to 360, where 0 (or 360) is red, 120 is green, and 240 is blue. Other colors fall within these ranges. 
+  \item Saturation: This measures the purity of the color. A saturation of 0 represents a shade of gray, while a saturation of 1 represents the full color.
+  \item Value: This represents the brightness of the color. A value of 0 represents black, a value of 1 represents the brightest version of the color, and values in between represent various shades of the color.
+\end{itemize}
+\begin{figure}[H]
+\includegraphics[scale=0.3]{Images/hsv.png}
+\centering
+\end{figure}
+\chapter{Data}
+The assignment asked for a few images in three different lighting conditions. We sampled 
+four images from the 11k hands dataset.
+\begin{figure}[H]
+  \minipage{0.25\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand1.png}
+    \caption{Hand 1}
+  \endminipage\hfill
+  \minipage{0.25\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand2.png}
+    \caption{Hand 2}
+  \endminipage\hfill
+  \minipage{0.25\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand3.png}
+    \caption{Hand 3}
+  \endminipage\hfill
+  \minipage{0.25\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand4.png}
+    \caption{Hand 4}
+  \endminipage\hfill
+\end{figure}
+Using an online tool we also got the same images without 
+background which allowed us to automatically extract a binary groud truth.
+In order to obtain three different lighting conditions we used the PIL python package enhancer,
+setting the factor to 0,5 for down lighting and to 1,5 for up lighting. 
+\begin{figure}[H]
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_down.png}
+    \caption{Hand down}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_normal.png}
+    \caption{Hand normal}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_up.png}
+    \caption{Hand up}
+  \endminipage\hfill
+\end{figure}
+\chapter{Analysis}
+The whole process of segmentation and analysis was carried out using the OpenCV python package
+for both color spaces. Before proceding with the segmentation we performed a histogram analysis
+which gave us some insights for the tresholds of the segmentation.
+\section{YCrCb space}
+The first space we analyzed was the YCrCb and below you can see the histograms for 
+the three values.
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/YCRCBNormal.png}
+ \caption{Normal image}
+\centering
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/YCRCBUp.png}
+ \caption{Up lighting image}
+\centering
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/YCRCBDown.png}
+ \caption{Down lighting image}
+\centering
+\end{figure}
+Here is evident how the image with poor lighting conditions is less bright (red line) while the up lighted
+image has an higher brightness, also the two channels representing the differences are accentuated
+with poor and normal lighting.
+\section{HSV}
+We proceded our analysis with the HSV space
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/HSVNormal.png}
+ \caption{Normal image}
+\centering
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/HSVUp.png}
+ \caption{Up lighting image}
+\centering
+\end{figure}
+\begin{figure}[H]
+\includegraphics[scale=0.4]{Images/HSVDown.png}
+ \caption{Down lighting image}
+\centering
+\end{figure}
+Here we can see how the image with great brightness has the higher S and V values. 
+Also the histograms give much insight for the hue value, which is from 0 to 100 for normal and
+poor lighting and more restricted for up lighting.
+\chapter{Segmentation and results}
+Next we proceded with the segmentation task. In particular we used the precision function as
+our performance measure 
+\[
+  \frac{\text{TP}}{\text{TP}+\text{FP}}
+\]
+Namely we performed a summation over the result of the logical AND between the identified region
+and the ground truth then we devided the result for the summation over the identified region.
+Both the identified region and the ground truth are binary images. \\
+We used different parameters according to the space and light condition. In particular for the
+YCrCb space we used:
+\begin{itemize}
+  \item [0,133, 77],[255, 173, 127] for normal lighting
+  \item [0,129, 77],[150, 150, 127] for normal lighting
+  \item [0,120, 77],[255, 190, 127] for normal lighting
+\end{itemize}
+For which we obtained a mean precision of 0.96047 for normal lighting 0.96509 for brighter images
+and 0.92717 for poor lighting.\\
+And for which we report the following sample results
+\begin{figure}[H]
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_downYCRCB.png}
+    \caption{Hand down}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_normalYCRCB.png}
+    \caption{Hand normal}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_upYCRCB.png}
+    \caption{Hand up}
+  \endminipage\hfill
+\end{figure}
+For HSV we used:
+\begin{itemize}
+  \item [0,50, 0],[200, 255, 255] for normal lighting
+  \item  [0,10, 150],[100, 255, 255] for normal lighting
+  \item [0,50, 0],[200, 255, 255]  for normal lighting
+\end{itemize}
+For which we obtained a mean precision of 0.98234 for normal lighting 0.96509 for brighter images
+and 0.982198 for poor lighting.\\
+And for which we report the following sample results\\
+\begin{figure}[H]
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_downHSV.png}
+    \caption{Hand down}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_normalHSV.png}
+    \caption{Hand normal}
+  \endminipage\hfill
+  \minipage{0.32\textwidth}
+    \includegraphics[width=\linewidth]{Images/hand_upHSV.png}
+    \caption{Hand up}
+  \endminipage\hfill
+\end{figure}
+\end{document}
